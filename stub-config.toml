@@ -1,0 +1,17 @@
+
+
+# Specify how the output files should be organized. See README for valid options
+output_path_format = '{patient}/oura/{date}/{modality}.json'
+
+# Collection of settings that tell the script where on the remote server the different webhooks are stored
+# The defaults here will work assuming you're following the default install instructions of oura-webhook-listener
+token_path = "~/data/oura_tokens.json"      # Location where updated authentication tokens are stored
+map_path =  "~/data/participant_map.json"   # Location where a mapping between project and oura patient ids is stored
+webhook_path =  "~/data/webhook_posts/"     # Location where all the JSON payloads received from webhooks are stored
+
+
+# Collection of settings that will allow the local server to connect to the remote listener server
+[listener-ssh]
+    hostname = ""       # IP or URL that the listener server can be reached at
+    username = ""       # Name of the UNIX user on the remote server
+    key_filename = ''   # Local key file to use to perform authentication with the server
