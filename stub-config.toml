@@ -1,5 +1,3 @@
-
-
 # Specify how the output files should be organized. See README for valid options
 output_path_format = '{patient}/oura/{date}/{modality}.json'
 
